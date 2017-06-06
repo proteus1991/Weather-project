@@ -17,7 +17,7 @@ app.controller('myCtrl', function ($scope, $http) {
   navigator.geolocation.getCurrentPosition(function (position) {
     var lat = position.coords.latitude
     var lon = position.coords.longitude
-    var url = `http://localhost:3000/weather?lat=${lat}&lon=${lon}&appId=b1b15e88fa797225412429c1c50c122a1`
+    var url = `http://localhost:3000/weather?lat=${lat}&lon=${lon}&appId=a63657f6ab79230f3ceeed08a4c29cdf`
     $http.get(url).then(function (response) {
       $scope.myWelcome = response.data
     })

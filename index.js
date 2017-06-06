@@ -7,11 +7,12 @@ app.get('/weather', function (req, res) {
   var lat = req.query.lat
   var lon = req.query.lon
   var appId = req.query.appId
-  var url = `http://samples.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${appId}`
+  var url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${appId}`
   request.get(url, function (err, response, body) {
     if (err) {
       res.send('Fuck')
     } else {
+      console.log(url);
       body = JSON.parse(body)
       var temp = Math.round(body.main.temp - 273.15)
       var weather = body.weather[0].main
@@ -22,9 +23,9 @@ app.get('/weather', function (req, res) {
 
 app.use(express.static('public'))
 
-app.get('/something', function (req, res) {
-  res.send('blah')
-})
+// app.get('/something', function (req, res) {
+//   res.send('blah')
+// })
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
