@@ -12,8 +12,9 @@ app.get('/weather', function (req, res) {
     if (err) {
       res.send('Fuck')
     } else {
-      console.log(url);
+      console.log(body);
       body = JSON.parse(body)
+      console.log(body);
       var temp = Math.round(body.main.temp - 273.15)
       var weather = body.weather[0].main
       res.send(`The temp is ${temp}, weather is ${weather}`)

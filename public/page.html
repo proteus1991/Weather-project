@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-<body>
 
+<body>
 
 <div ng-app="myApp" ng-controller="myCtrl"> 
 
@@ -11,20 +10,8 @@
 
 </div>
 
-<script>
-var app = angular.module('myApp', [])
-app.controller('myCtrl', function ($scope, $http) {
-  navigator.geolocation.getCurrentPosition(function (position) {
-    var lat = position.coords.latitude
-    var lon = position.coords.longitude
-    var url = `http://localhost:3000/weather?lat=${lat}&lon=${lon}&appId=a63657f6ab79230f3ceeed08a4c29cdf`
-    $http.get(url).then(function (response) {
-      $scope.myWelcome = response.data
-    })
-  })
-})
-</script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="controller/controller.js"></script>
 </body>
 </html>
 
