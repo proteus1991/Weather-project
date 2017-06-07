@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!--font -->
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href="main.css" rel="stylesheet" type="text/css" >
+
+<body class="text-center info" ng-app="myApp" ng-controller="myCtrl" ng-style="weatherBackground">
+
+<h1>Local Weather Project </h1>
+<h2>Using Open Weather API</h2>
+
+<a class="btn-lg btn-primary">{{cityname | uppercase}}</a>
+<a class="btn-lg btn-primary" ng-init= "value=true" ng-show="value" ng-click="value=!value">{{cTemp}}</a>
+<a class="btn-lg btn-primary" ng-show= "!value" ng-click="value=!value">{{fTemp}}</a>
+<a class="btn-lg btn-primary">{{description | uppercase}}<img ng-src="{{icon}}"></a>
+<a class="btn-lg btn-primary">{{speed}}</a>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="controller/controller.js"></script>
+</html>
+

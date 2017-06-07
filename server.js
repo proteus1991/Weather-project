@@ -10,14 +10,19 @@ app.get('/weather', function (req, res) {
   var url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${appId}`
   request.get(url, function (err, response, body) {
     if (err) {
-      res.send('Fuck')
+      res.send('Connection Error')
     } else {
-      console.log(body);
       body = JSON.parse(body)
-      console.log(body);
-      var temp = Math.round(body.main.temp - 273.15)
-      var weather = body.weather[0].main
-      res.send(`The temp is ${temp}, weather is ${weather}`)
+      console.log(body)
+      var weather = {}
+      weather.cTemp = Math.round((body.main.temp - 273.15)) + " °C"
+      weather.fTemp = Math.round(((body.main.temp - 273.15) * 9 / 5 + 32)) + " °F"  
+      weather.description = body.weather[0].main
+      weather.speed = body.wind.speed.toFixed(1) + "m/s"
+      weather.cityname = body.name
+      weather.icon = "http://openweathermap.org/img/w/" + body.weather[0].icon + ".png"  
+      // res.send(`The temp is ${weather.cTemp}, is ${weather.description}, wind is ${weather.speed} in ${weather.cityname}`)
+      res.send(weather)
     }
   })
 })
