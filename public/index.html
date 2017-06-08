@@ -12,9 +12,11 @@
 
 <body class="text-center info" ng-app="myApp" ng-controller="myCtrl" ng-style="weatherBackground">
 
-<h1>Local Weather Project </h1>
-<!-- <h3>for Massless Technologies only</h3> -->
+<h1>Local weather project</h1>
+<br>
+<br>
 <p>OpenWeatherMap AppId:</p>
+
 <div class="row">
     <div class="col-lg-4 col-centered">
        	<div class="input-group">
@@ -25,47 +27,33 @@
        </div><!-- /input-group -->
     </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
-<!-- 
-<div class="container">
-<table class="table">
-<thead>
-	<tr>
-		<th>City</th>
-		<th>Temperature</th>
-		<th>Weather</th>
-		<th>Wind Speed</th>
-	</tr>
-</thead>
-<tbody>
-	<tr>
-		<td >{{cityname | uppercase}}</td>
-		<td >{{cTemp}}</td>
-		<td >{{description | uppercase}}<img ng-src="{{icon}}"></td>
-		<td >{{speed}}</td>
-	</tr>
-</tbody>
-	
-</table>
-</div> -->
+<br>
+
+<ul class="list-group col-lg-3 col-centered" ng-show="value1">
+  	<li class="list-group-item list-group-item-success">City: {{cityname | uppercase}}</li>
+  	<a href="" class="list-group-item list-group-item-info" ng-init="uchange=true" ng-show="uchange" ng-click="uchange=!uchange" >Temperature: {{cTemp}}</a>
+  	<a href="" class="list-group-item list-group-item-info" ng-show="!uchange" ng-click="uchange=!uchange" >Temperature: {{fTemp}}</a>
+  	<li class="list-group-item list-group-item-warning" >Weather: {{description | uppercase}}</li>
+  	<li class="list-group-item list-group-item-danger" >Wind Speed: {{speed}}</li>
+  	<li class="list-group-item list-group-item-success" >Humidity: {{humidity}}</li>
+</ul>
 
 
+<ul class="list-group col-lg-3 col-centered" ng-show="value2">
+	<li class="list-group-item list-group-item-danger"  >Error: {{Invalid}}</li>
+</ul>
 
-<a class="btn-lg btn-primary" ng-show="value">{{cityname | uppercase}}</a>
-<a class="btn-lg btn-primary" ng-show="value">{{cTemp}}</a>
-<a class="btn-lg btn-primary" ng-show="value">{{fTemp}}</a>
-<a class="btn-lg btn-primary" ng-show="value">{{description | uppercase}}<img ng-src="{{icon}}"></a>
-<a class="btn-lg btn-primary" ng-show="value">Wind: {{speed}}</a>
-
-<!-- <a class="btn-lg btn-primary">{{cityname | uppercase}}</a>
-<a class="btn-lg btn-primary" ng-init= "value=true" ng-show="value" ng-click="value=!value">{{cTemp}}</a>
-<a class="btn-lg btn-primary" ng-show= "!value" ng-click="value=!value">{{fTemp}}</a>
-<a class="btn-lg btn-primary">{{description | uppercase}}<img ng-src="{{icon}}"></a>
-<a class="btn-lg btn-primary">Wind: {{speed}}</a> -->
-
+<!-- footer -->
+<footer class="footer">
+  	<div class="container">
+    	<p class="text-muted">Designed by Xiaohong Liu</p>
+  	</div>
+</footer>
 
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <script src="controller/controller.js"></script>
+
 </html>
 
