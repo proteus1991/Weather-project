@@ -5,3 +5,8 @@
 .btn-lg{
 	margin:5px;
 }
+
+.col-centered{
+    margin: 0 auto;
+    float: none;
+}

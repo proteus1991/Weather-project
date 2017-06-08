@@ -13,13 +13,55 @@
 <body class="text-center info" ng-app="myApp" ng-controller="myCtrl" ng-style="weatherBackground">
 
 <h1>Local Weather Project </h1>
-<h2>Using Open Weather API</h2>
+<!-- <h3>for Massless Technologies only</h3> -->
+<p>OpenWeatherMap AppId:</p>
+<div class="row">
+    <div class="col-lg-4 col-centered">
+       	<div class="input-group">
+       		<input type="text" class="form-control" ng-model= "AppId" type="text" ng-init="AppId='a63657f6ab79230f3ceeed08a4c29cdf'">
+       		<span class="input-group-btn">
+        	<button class="btn btn-default" type="button" ng-click="sendAppId()" >Send</button>
+        	</span>
+       </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+<!-- 
+<div class="container">
+<table class="table">
+<thead>
+	<tr>
+		<th>City</th>
+		<th>Temperature</th>
+		<th>Weather</th>
+		<th>Wind Speed</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td >{{cityname | uppercase}}</td>
+		<td >{{cTemp}}</td>
+		<td >{{description | uppercase}}<img ng-src="{{icon}}"></td>
+		<td >{{speed}}</td>
+	</tr>
+</tbody>
+	
+</table>
+</div> -->
 
-<a class="btn-lg btn-primary">{{cityname | uppercase}}</a>
+
+
+<a class="btn-lg btn-primary" ng-show="value">{{cityname | uppercase}}</a>
+<a class="btn-lg btn-primary" ng-show="value">{{cTemp}}</a>
+<a class="btn-lg btn-primary" ng-show="value">{{fTemp}}</a>
+<a class="btn-lg btn-primary" ng-show="value">{{description | uppercase}}<img ng-src="{{icon}}"></a>
+<a class="btn-lg btn-primary" ng-show="value">Wind: {{speed}}</a>
+
+<!-- <a class="btn-lg btn-primary">{{cityname | uppercase}}</a>
 <a class="btn-lg btn-primary" ng-init= "value=true" ng-show="value" ng-click="value=!value">{{cTemp}}</a>
 <a class="btn-lg btn-primary" ng-show= "!value" ng-click="value=!value">{{fTemp}}</a>
 <a class="btn-lg btn-primary">{{description | uppercase}}<img ng-src="{{icon}}"></a>
-<a class="btn-lg btn-primary">{{speed}}</a>
+<a class="btn-lg btn-primary">Wind: {{speed}}</a> -->
+
 
 </body>
 
