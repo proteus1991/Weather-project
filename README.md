@@ -11,37 +11,16 @@ API: OpenWeatherMAP(https://openweathermap.org/api).
 ```
 
 ### Installation & Setup
--####Clone the repository:```git clone ```
--####Go into the directory:
+1. Clone the repository: ```git clone https://github.com/proteus1991/Weather-project.git```
+2. Go into the directory: ```cd Weather-project```
+3. Install the required packages: ``` npm install ```
+4. Starter the server:``` node server.js```
+5. Open your browser and input: ``` http://localhost:3000```
 
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
 Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Authors
 
