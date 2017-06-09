@@ -16,12 +16,14 @@ API: OpenWeatherMAP(https://openweathermap.org/api).
 3. Install the required packages: ``` npm install ```
 4. Starter the server:``` node server.js```
 5. Open your browser and input: ``` http://localhost:3000```
-6. Input your own API key or use the defaut key to acquire recent weather information at your current location.
+6. Input your own API key or use the defaut key to acquire the weather information at your current location.
 
 
-## Running the tests
+## Feature
+- verify your API key. If your key were wrong, there would be a prompt about how to get your correct key.
+- click the Temperature bar and then the temp unit will change from Celsius to Fahrenheit.
+- The background will change according to the weather.
 
-Explain how to run the automated tests for this system
 
 ## Authors
 
