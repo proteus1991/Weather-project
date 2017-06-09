@@ -20,9 +20,10 @@ API: OpenWeatherMAP(https://openweathermap.org/api).
 
 
 ## Feature
-- verify your API key. If your key were wrong, there would be a prompt about how to get your correct key.
-- click the Temperature bar and then the temp unit will change from Celsius to Fahrenheit.
-- The background will change according to the weather.
+- verify your API key. If your key were wrong, there would be a prompt about how to get your key correctly.
+- Click the Temperature bar and the Temp unit will change from Celsius to Fahrenheit.
+- The weather icon will change according to the weather description (Clear, Rain, Snow, Extrem, etc.).
+- The background will change according to the weather description.
 
 
 ## Authors
