@@ -2,7 +2,7 @@
 
 An express application that uses OpenWeatherMapAPI and HTML5 geolocation to display the latest weather in Celsius and Fahrenheit at user's location is created.
 
-### Prerequisites
+## Prerequisites
 
 ```
 Frontend: Angular.js
@@ -10,7 +10,7 @@ Backend: Node.js
 API: OpenWeatherMAP(https://openweathermap.org/api).
 ```
 
-### Installation & Setup
+## Installation & Setup
 1. Clone the repository: ```git clone https://github.com/proteus1991/Weather-project.git```
 2. Go into the directory: ```cd Weather-project```
 3. Install the required packages: ``` npm install ```
