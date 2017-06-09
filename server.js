@@ -6,7 +6,7 @@ const app = express()
 app.get('/weather', function (req, res) {
   var lat = req.query.lat
   var lon = req.query.lon
-  var appId = req.query.appId
+  var appId = req.query.appId 
   var url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${appId}`
   request.get(url, function (err, response, body) {
     body = JSON.parse(body)
