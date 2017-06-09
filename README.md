@@ -14,7 +14,7 @@ API: OpenWeatherMAP(https://openweathermap.org/api).
 1. Clone the repository: ```git clone https://github.com/proteus1991/Weather-project.git```
 2. Go into the directory: ```cd Weather-project```
 3. Install the required packages: ``` npm install ```
-4. Starter the server:``` node server.js```
+4. Start the server:``` node server.js```
 5. Open your browser and input: ``` http://localhost:3000```
 6. Input your own API key or use the defaut key to acquire the weather information at your current location.
 
