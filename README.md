@@ -11,8 +11,8 @@ API: OpenWeatherMAP(https://openweathermap.org/api).
 ```
 
 ### Installation & Setup
--Clone the repository:```git clone ```
--
+-####Clone the repository:```git clone ```
+-####Go into the directory:
 
 
 And repeat
