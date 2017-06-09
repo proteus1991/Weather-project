@@ -18,7 +18,6 @@
 
 <h1>Local weather project</h1>
 <br>
-<br>
 <p>OpenWeatherMap AppId:</p>
 
 <div class="row">
@@ -37,7 +36,7 @@
   	<li class="list-group-item list-group-item-success">City: {{cityname | uppercase}}</li>
   	<a href="" class="list-group-item list-group-item-info" ng-init="uchange=true" ng-show="uchange" ng-click="uchange=!uchange" >Temperature: {{cTemp}}</a>
   	<a href="" class="list-group-item list-group-item-info" ng-show="!uchange" ng-click="uchange=!uchange" >Temperature: {{fTemp}}</a>
-  	<li class="list-group-item list-group-item-warning" >Weather: {{description | uppercase}}</li>
+  	<li class="list-group-item list-group-item-warning" >Weather: {{description | uppercase}}<img ng-src="{{icon}}"></li>
   	<li class="list-group-item list-group-item-danger" >Wind Speed: {{speed}}</li>
   	<li class="list-group-item list-group-item-success" >Humidity: {{humidity}}</li>
 </ul>
@@ -50,7 +49,7 @@
 <!-- footer -->
 <footer class="footer">
   	<div class="container">
-    	<p class="text-muted">Designed by Xiaohong Liu</p>
+    	<p class="text-muted">Designed by Xiaohong Liu (proteus9000@gmail.com)</p>
   	</div>
 </footer>
 
