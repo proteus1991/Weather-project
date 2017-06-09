@@ -7,20 +7,13 @@ An express application that uses OpenWeatherMapAPI and HTML5 geolocation to disp
 ```
 Frontend: Angular.js
 Backend: Node.js
-API: [OpenWeatherMAP](https://openweathermap.org/api).
+API: OpenWeatherMAP(https://openweathermap.org/api).
 ```
-This site was built using [GitHub Pages](https://pages.github.com/).
 
+### Installation & Setup
+-Clone the repository:```git clone ```
+-
 
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
 
 And repeat
 
