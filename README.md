@@ -28,7 +28,7 @@ API: OpenWeatherMAP(https://openweathermap.org/api).
 
 ## Authors
 
-* **Xiaohong Liu**
+* **Xiaohong Liu** **Dan Zhou**
 
 ## License
 
